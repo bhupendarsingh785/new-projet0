@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate AI Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🛸 अत्याधुनिक AI जनरेटर</h1>
+        
+        <!-- Input Section -->
+        <div class="input-section">
+            <textarea id="userInput" placeholder="अपना आदेश हिंदी/अंग्रेजी में लिखें..."></textarea>
+            <div class="button-group">
+                <button onclick="generate('basic')">साधारण उपकरण बनाएं</button>
+                <button onclick="generate('advanced')">AI मॉडल जनरेट करें</button>
+            </div>
+        </div>
+
+        <!-- Output Section -->
+        <div class="output-section">
+            <div class="code-preview">
+                <h3>जनरेटेड कोड:</h3>
+                <pre id="generatedCode"></pre>
+            </div>
+            <div class="model-output">
+                <h3>AI मॉडल फाइलें:</h3>
+                <div id="modelFiles"></div>
+            </div>
+            <button class="download-btn" onclick="downloadAll()">सब कुछ डाउनलोड करें</button>
+        </div>
+    </div>
+
+    <script src="street.js"></script>
+</body>
+</html>
